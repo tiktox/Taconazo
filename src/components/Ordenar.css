@@ -1,0 +1,93 @@
+.ordenar-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.ordenar-info h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.ordenar-info p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.ordenar-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.option h4 {
+  color: #d4af37;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.option p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.ordenar-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ordenar-form input,
+.ordenar-form textarea,
+.ordenar-form select {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.ordenar-form input:focus,
+.ordenar-form textarea:focus,
+.ordenar-form select:focus {
+  outline: none;
+  border-color: #d4af37;
+}
+
+.ordenar-form button {
+  background: #d4af37;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ordenar-form button:hover {
+  background: #b8941f;
+}
+
+@media (max-width: 768px) {
+  .ordenar-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .ordenar-info p {
+    text-align: center;
+  }
+}

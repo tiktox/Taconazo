@@ -1,0 +1,38 @@
+.nosotros {
+  background: #000000;
+}
+
+.nosotros-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.nosotros-text p {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.nosotros-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .nosotros-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .nosotros-text p {
+    text-align: center;
+  }
+  
+  .nosotros-image img {
+    height: 300px;
+  }
+}

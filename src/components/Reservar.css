@@ -1,0 +1,116 @@
+.reservar {
+  background: #f8f8f8;
+}
+
+.reservar-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.reservar-info h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.reservar-info p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.horarios {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.horarios h4 {
+  color: #d4af37;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.horario-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.horario-item:last-child {
+  border-bottom: none;
+}
+
+.horario-item span:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.horario-item span:last-child {
+  color: #666;
+}
+
+.reservar-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reservar-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reservar-form input,
+.reservar-form textarea,
+.reservar-form select {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.reservar-form input:focus,
+.reservar-form textarea:focus,
+.reservar-form select:focus {
+  outline: none;
+  border-color: #d4af37;
+}
+
+.reservar-form button {
+  background: #d4af37;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reservar-form button:hover {
+  background: #b8941f;
+}
+
+@media (max-width: 768px) {
+  .reservar-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .reservar-info p {
+    text-align: center;
+  }
+  
+  .reservar-form {
+    padding: 25px;
+  }
+}

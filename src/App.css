@@ -1,0 +1,123 @@
+.App {
+  background: #ff0095;
+  text-align: center;
+}
+
+.section {
+  background: #000000;
+  padding: 80px 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#menu {
+  /* Establece el fondo y cualquier otro estilo base */
+  background:#000000;
+  
+  /* --- Bordes redondeados solo en las esquinas inferiores --- */
+  
+  /* Esquina superior izquierda: 0 radio (recta) */
+  border-top-left-radius: 0;
+  
+  /* Esquina superior derecha: 0 radio (recta) */
+  border-top-right-radius: 0;
+  
+  /* Esquina inferior derecha: 50px de radio */
+  border-bottom-right-radius: 50px;
+  
+  /* Esquina inferior izquierda: 50px de radio */
+  border-bottom-left-radius: 50px;
+  
+  /* Opcional: También puedes usar la forma abreviada en un solo lugar: */
+  /* border-radius: 0 0 50px 50px;  */
+  
+  /* Nota: El border-radius de 50px que pusiste originalmente ya es la curva. */
+  /* Si necesitas que el fondo sea el de la imagen (blanco), cambia el background: */
+  /* background: white;  */
+}
+
+
+#menu h2 {
+  color: #ffffff;
+}
+
+#menu p {
+  color: #666;
+}
+
+#galeria {
+ 
+  background:#ff0095;
+}
+
+#galeria h2 {
+  color: #333;
+}
+
+#galeria p {
+  color: #666;
+}
+#taco-lovers {
+   /* Esquina superior izquierda: 0 radio (recta) */
+  border-top-left-radius: 50px;
+  
+  /* Esquina superior derecha: 0 radio (recta) */
+  border-top-right-radius: 50px;
+  
+  /* Esquina inferior derecha: 50px de radio */
+  border-bottom-right-radius: 0;
+  
+  /* Esquina inferior izquierda: 50px de radio */
+  border-bottom-left-radius: 0;
+
+  /* Opcional: También puedes usar la forma abreviada en un solo lugar: */
+  /* border-radius: 0 0 50px 50px;  */
+  
+  /* Nota: El border-radius de 50px que pusiste originalmente ya es la curva. */
+  /* Si necesitas que el fondo sea el de la imagen (blanco), cambia el background: */
+  /* background: white;  */
+}
+
+
+#contacto {
+  background: #ff0095;
+}
+
+#contacto h2 {
+  color: #333;
+}
+
+#contacto p {
+  color: #666;
+}
+ 
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 15px;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+  }
+  
+  .section p {
+
+    font-size: 1rem;
+  }
+ 
+}
