@@ -6,15 +6,16 @@
 }
 
 .menu-item {
-
   height: 350px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   background: rgb(255, 255, 255);
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   cursor: pointer;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .menu-item:hover {
@@ -205,17 +206,23 @@
   .menu-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0 20px;
   }
+  
   .menu-item {
     width: 100%;
+    max-width: none;
+    height: auto;
   }
+  
   .menu-item-content {
-  padding: 20px;
+    padding: 20px;
   }
   
   .modal-content {
     grid-template-columns: 1fr;
     max-width: 90%;
+    margin: 0 10px;
   }
   
   .modal-image {
@@ -225,5 +232,19 @@
   
   .modal-info {
     padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    padding: 0 15px;
+  }
+  
+  .menu-item {
+    height: auto;
+  }
+  
+  .menu-image {
+    height: 180px;
   }
 }

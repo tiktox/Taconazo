@@ -26,6 +26,7 @@
   .nosotros-content {
     grid-template-columns: 1fr;
     gap: 30px;
+    padding: 0 20px;
   }
   
   .nosotros-text p {
@@ -34,5 +35,16 @@
   
   .nosotros-image img {
     height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros-content {
+    padding: 0 15px;
+    gap: 20px;
+  }
+  
+  .nosotros-image img {
+    height: 250px;
   }
 }

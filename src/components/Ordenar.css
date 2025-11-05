@@ -85,9 +85,17 @@
   .ordenar-content {
     grid-template-columns: 1fr;
     gap: 30px;
+    padding: 0 20px;
   }
   
   .ordenar-info p {
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ordenar-content {
+    padding: 0 15px;
+    gap: 20px;
   }
 }

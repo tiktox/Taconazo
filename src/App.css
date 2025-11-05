@@ -108,7 +108,7 @@
  
 @media (max-width: 768px) {
   .section {
-    padding: 60px 15px;
+    padding: 60px 20px;
   }
   
   .section h2 {
@@ -116,8 +116,20 @@
   }
   
   .section p {
-
     font-size: 1rem;
   }
- 
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 15px;
+  }
+  
+  .section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section p {
+    font-size: 0.95rem;
+  }
 }

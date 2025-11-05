@@ -4,8 +4,8 @@
   right: -495px;
   width: 350px;
   height: 500px;
-  margin: 40px 0;
-  overflow: visible; /* permitir que la barra sobresalga */
+  margin: 40px auto;
+  overflow: visible;
 }
 
 .video-container {
@@ -87,13 +87,13 @@
 
 @media (max-width: 768px) {
   .video-player {
-    right: -15px;
+    right: 0;
     width: 100%;
+    max-width: 350px;
     height: auto;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 
-  /* la barra y el video usarán la misma altura definida en la variable */
   .hours-bar {
     left: -35px;
     width: 35px;
@@ -103,8 +103,8 @@
   }
 
   .hours-bar span {
-    font-size: 1rem;
-    line-height: 1.3;
+    font-size: 0.9rem;
+    line-height: 1.2;
   }
 
   .video-container,
@@ -133,6 +133,21 @@
 
   .video-indicators {
     bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-player {
+    max-width: 300px;
+  }
+  
+  .hours-bar {
+    left: -30px;
+    width: 30px;
+  }
+  
+  .hours-bar span {
+    font-size: 0.8rem;
   }
 }
 .video-controls {

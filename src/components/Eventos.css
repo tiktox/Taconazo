@@ -64,9 +64,20 @@
   .eventos-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0 20px;
   }
   
   .evento-card {
     padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eventos-grid {
+    padding: 0 15px;
+  }
+  
+  .evento-card {
+    padding: 20px;
   }
 }
