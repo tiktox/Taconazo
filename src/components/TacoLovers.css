@@ -1,11 +1,13 @@
 /* --- Versión limpia y única de estilos relevantes --- */
 .video-player {
   position: relative;
-  right: -495px;
   width: 350px;
   height: 500px;
   margin: 40px auto;
   overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-container {
@@ -87,17 +89,16 @@
 
 @media (max-width: 768px) {
   .video-player {
-    right: 0;
-    width: 100%;
+    width: 90%;
     max-width: 350px;
-    height: auto;
+    height: 420px;
     margin: 20px auto;
   }
 
   .hours-bar {
     left: -35px;
     width: 35px;
-    height: var(--hours-height-mobile);
+    height: 420px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
   }
@@ -110,21 +111,21 @@
   .video-container,
   .video-container video {
     width: 100%;
-    height: var(--hours-height-mobile);
+    height: 420px;
   }
 
   .video-controls {
-    padding: 12px 15px;
-    gap: 10px;
+    padding: 10px;
+    gap: 8px;
   }
 
   .control-btn {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
   }
 
   .timeline-container {
-    min-width: 120px;
+    min-width: 100px;
   }
 
   .time-display {
@@ -132,22 +133,30 @@
   }
 
   .video-indicators {
-    bottom: 30px;
+    bottom: 25px;
   }
 }
 
 @media (max-width: 480px) {
   .video-player {
+    width: 95%;
     max-width: 300px;
+    height: 380px;
   }
   
   .hours-bar {
     left: -30px;
     width: 30px;
+    height: 380px;
   }
   
   .hours-bar span {
     font-size: 0.8rem;
+  }
+  
+  .video-container,
+  .video-container video {
+    height: 380px;
   }
 }
 .video-controls {

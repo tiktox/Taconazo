@@ -93,6 +93,9 @@ const Footer = () => {
             <li><button onClick={() => scrollToSection('nosotros')} className="footer-link">Nosotros</button></li>
             <li><button onClick={() => scrollToSection('menu')} className="footer-link">Menú</button></li>
             <li><button onClick={() => scrollToSection('galeria')} className="footer-link">Galería</button></li>
+            <li><button onClick={() => scrollToSection('taco-lovers')} className="footer-link">Taco Lovers</button></li>
+            <li><a href="#" onClick={(e) => {e.preventDefault(); alert('¡Próximamente disponible!')}} className="footer-link">Trabaja con nosotros</a></li>
+            <li><a href="#" onClick={(e) => {e.preventDefault(); alert('¡Próximamente disponible!')}} className="footer-link">Sucursales</a></li>
           </ul>
         </div>
 

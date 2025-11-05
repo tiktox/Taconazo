@@ -1,19 +1,23 @@
 .contacto-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
-  margin-top: 40px;
-  align-items: start;
+  margin: 40px auto 0;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .contacto-form {
-  position: relative;
-  right: -350px;
   background: white;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .contacto-form h3 {
@@ -90,15 +94,15 @@
 
 @media (max-width: 768px) {
   .contacto-content {
-    grid-template-columns: 1fr;
     gap: 30px;
     padding: 0 20px;
   }
   
   .contacto-form {
-    right: 0;
     padding: 25px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
   }
   
   .social-media {
@@ -119,5 +123,6 @@
   
   .contacto-form {
     padding: 20px;
+    max-width: 350px;
   }
 }
